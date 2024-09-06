@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     node01.vm.provision "shell", inline: <<-SHELL
       apt-get update
       apt-get install -y docker.io
-      docker swarm join --token <SWMTKN-1-5e7unm8g9q57jw9wmqbh1q9zhkf8n5yj6va65kh9ialhdixmbz-ce0uegua6ebm43q1zzm2f2thc> 192.168.56.10:2377
+      docker swarm join --token <TOKEN INDIVIDUAL> 192.168.56.10:2377
     SHELL
   end
 
@@ -40,7 +40,7 @@ Vagrant.configure("2") do |config|
     node02.vm.provision "shell", inline: <<-SHELL
       apt-get update
       apt-get install -y docker.io
-      docker swarm join --token <SWMTKN-1-5e7unm8g9q57jw9wmqbh1q9zhkf8n5yj6va65kh9ialhdixmbz-ce0uegua6ebm43q1zzm2f2thc> 192.168.56.10:2377
+      docker swarm join --token <TOKEN INDIVIDUAL> 192.168.56.10:2377
     SHELL
   end
 
@@ -55,7 +55,7 @@ Vagrant.configure("2") do |config|
     node03.vm.provision "shell", inline: <<-SHELL
       apt-get update
       apt-get install -y docker.io
-      docker swarm join --token <SWMTKN-1-5e7unm8g9q57jw9wmqbh1q9zhkf8n5yj6va65kh9ialhdixmbz-ce0uegua6ebm43q1zzm2f2thc> 192.168.56.10:2377
+      docker swarm join --token <TOKEN INDIVIDUAL> 192.168.56.10:2377
     SHELL
   end
 end
